@@ -24,7 +24,7 @@ if (cluster.isMaster) {
     const axios = require('axios');  //用于处理流式相应
     const bodyParser = require('body-parser');
     const app = express();
-    const PORT = process.env.PORT || 7382;
+    const PORT = process.env.PORT;
 
     app.use(bodyParser.json());
 
