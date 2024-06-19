@@ -3,9 +3,9 @@ const totalCPUs = require('os').cpus().length;
 
 // 配置信息
 const config = {
-    oeKey: '替换为你的EdgeOne网关的Key', 
-    oeGatewayName: '替换为你的EdgeOne网关的名称',
-    oeAIProvider: '替换为你需要调用的AI模型的提供商'
+    oeKey: process.env.OE_KEY,  //替换为你的EdgeOne网关的Key
+    oeGatewayName: process.env.OE_GATEWAY_NAME,  //替换为你的EdgeOne网关的名称
+    oeAIProvider: process.env.OE_AI_PROVIDER  //替换为你需要调用的AI模型的提供商
 };
 
 if (cluster.isMaster) {
