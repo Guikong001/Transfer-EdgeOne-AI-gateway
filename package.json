@@ -1,7 +1,7 @@
 {
-  "name": "Transfer-EdgeOne-AI-gateway",
+  "name": "EdgeOneAIgateway",
   "version": "1.0.0",
-  "main": "server.js", // 确保这里的文件名与实际代码文件名一致
+  "main": "server.js", 
   "scripts": {
     "start": "node server.js"
   },
