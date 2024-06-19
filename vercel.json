@@ -6,10 +6,10 @@
       "use": "@vercel/node"
     }
   ],
-  "env": {
-    "PORT": "3000",
-    "OE_KEY": "@oe_key",
-    "OE_GATEWAY_NAME": "@oe_gateway_name",
-    "OE_AI_PROVIDER": "@oe_ai_provider"
-  }
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
 }
